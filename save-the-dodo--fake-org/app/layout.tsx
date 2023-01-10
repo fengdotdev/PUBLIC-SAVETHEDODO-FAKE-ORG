@@ -1,3 +1,5 @@
+import Footer from './components/footer/page';
+import Navbar from './components/navbar/page';
 import './globals.css';
 
 
@@ -7,7 +9,14 @@ export default function RootLayout ( { children }: {
 {
     return (
         <html lang="en">
-            <body>{ children }</body>
+            <body className='flex flex-col h-screen'>
+                <Navbar />
+                <section className='flex-grow'>
+                    { children }
+                </section>
+
+                <Footer />
+            </body>
         </html>
     );
 }
