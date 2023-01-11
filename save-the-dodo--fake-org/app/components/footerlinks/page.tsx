@@ -3,7 +3,7 @@ export default function FooterLinks ()
 {
     return (
         <div >
-            <li className="flex flex-row justify-center space-x-8 pb-5">
+            <li className="flex flex-row justify-center space-x-8 pb-5 text-light text-bold">
                 <ul >
                     <a href="/faqs">FAQs</a>
                 </ul>

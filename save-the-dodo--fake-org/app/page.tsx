@@ -8,7 +8,7 @@ export default function Page ()
                 <Hero />
             </section>
             <article className="p-1 m-4">
-                <h1 className="text-3xl">
+                <h1 className="text-3xl text-primary">
                     Suspendisse ut lacinia massa, ac porta diam.
                 </h1>
                 <br />
