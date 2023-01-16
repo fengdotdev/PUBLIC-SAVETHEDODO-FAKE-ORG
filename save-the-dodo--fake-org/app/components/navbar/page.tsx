@@ -2,16 +2,14 @@
 
 import { useState } from "react";
 import Logo from "../logo/page";
+import Link from "next/link";
 
 
 
-export subMenuElement interface{
 
-}
 
 export default function Navbar (props :{})
 {
-
     const [ isMenuOpen, setMenuOpen ] = useState( false );
     return (
         <nav className="p-3 bg-dark justify-between	items-center ">
@@ -38,11 +36,13 @@ export default function Navbar (props :{})
                 </button>
             </div>
 
-            <ul className={ `${ isMenuOpen ? "block" : "hidden" } md:hidden flex flex-col items-center w-auto text-primary bg-light rounded-lg m-1 p-2` }>
+            <ul className={ `${ isMenuOpen ? "block" : "hidden" } md:hidden flex flex-col items-center space-y-1 w-auto text-primary bg-light rounded-lg m-1 p-2` }>
                 <li className="">Discover</li>
                 <li className="">Get Involve </li>
                 <li className="">About Us</li>
-                <a className=" p-3 px-6 pt-2 text-light rounded-lg baseline w-full bg-primary hover:bg-light hover:text-primary text-center" href="">Join!</a>
+                <li className="p-2">
+                    <Link className="  my-2 p-3 px-6 pt-2 text-light rounded-lg baseline w-full bg-primary hover:bg-light hover:text-primary text-center" href="/join">Join!</Link>
+                </li>
             </ul>
         </nav>
     );
