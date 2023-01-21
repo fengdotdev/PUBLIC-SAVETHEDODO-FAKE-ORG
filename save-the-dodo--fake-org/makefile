@@ -1,6 +1,10 @@
 run:
 	npm run dev
 
+
+ip:
+	ipconfig
+	
 build:
 	npm run build
 
