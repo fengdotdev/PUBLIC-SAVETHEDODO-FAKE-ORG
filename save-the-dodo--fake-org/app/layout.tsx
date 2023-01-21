@@ -1,4 +1,5 @@
 import Footer from './components/footer/page';
+import ButtomLinks from './components/buttomlinks/page';
 import Navbar from './components/navbar/page';
 import './globals.css';
 
@@ -14,7 +15,7 @@ export default function RootLayout ( { children }: {
                 <section className='flex-grow'>
                     { children }
                 </section>
-
+                <ButtomLinks/>
                 <Footer />
             </body>
         </html>

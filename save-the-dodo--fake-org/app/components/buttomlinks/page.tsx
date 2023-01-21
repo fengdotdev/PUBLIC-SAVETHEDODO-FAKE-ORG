@@ -1,16 +1,13 @@
 import Link from "next/link";
 import { links } from "../../../typings";
 
-
-
-
-
 type footerlinks = links[]
 
-export default function FooterLinks ()
+export default function ButtomLinks ()
 {
 
-    const footerlinksbundle: footerlinks = [
+
+    const buttomlinksbundle: footerlinks = [
         {
             title: "left",
             content: [ { title: "some", url: "/some" } ]
@@ -31,8 +28,7 @@ export default function FooterLinks ()
     ];
 
 
-
-    const s = footerlinksbundle.map( ( e ) =>
+    const s = buttomlinksbundle.map( ( e ) =>
     {
         return (
             <>
@@ -41,22 +37,22 @@ export default function FooterLinks ()
                     { e.content.map( ( e ) =>
                     {
                         return (
-                            <li id={ e.title + e.url } ><Link href={ e.url }>{ e.title }
+                            <li id="id={e.title+e.url}"><Link href={ e.url }>{ e.title }
                             </Link></li>
                         );
                     } ) }
                 </ul>
             </>
-
         );
     } );
 
+
+
     return (
-        <div className="flex flex-row justify-center space-x-8 pb-5 text-light text-bold">
+        <div className="flex flex-row">
+
             { s }
         </div>
     );
 
 }
-
-

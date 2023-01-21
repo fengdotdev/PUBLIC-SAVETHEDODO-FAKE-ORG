@@ -3,14 +3,26 @@
 import { useState } from "react";
 import Logo from "../logo/page";
 import Link from "next/link";
+import { link } from "../../../typings";
 
 
-
-
-
-export default function Navbar (props :{})
+export default function Navbar ( props: {} )
 {
+    const navlinks: link[] = [
+        { title: "Discover", url: "/some" },
+        { title: "Get Involve", url: "/some" },
+        { title: "About Us", url: "/some" },
+    ]
+
     const [ isMenuOpen, setMenuOpen ] = useState( false );
+
+    const s = navlinks.map( ( e ) =>
+    {
+        return (
+            <li id={e.title+e.url} className="text-light" ><Link href={ e.url }>{ e.title }
+            </Link></li>
+        );
+    } )
     return (
         <nav className="p-3 bg-dark justify-between	items-center ">
             <div className="flex flex-row justify-between	items-center ">
@@ -18,9 +30,7 @@ export default function Navbar (props :{})
                     <Logo />
                 </div>
                 <ul className="hidden md:flex flex-row  space-x-8">
-                    <li className="text-light">Discover</li>
-                    <li className="text-light">Get Involve </li>
-                    <li className="text-light">About Us</li>
+                    { s }
                 </ul>
                 <a className="hidden p-3 px-6 pt-2 text-light rounded-full baseline  md:block bg-primary hover:bg-light hover:text-primary" href="">Join!</a>
                 <button
@@ -31,15 +41,11 @@ export default function Navbar (props :{})
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                 </svg> }
 
-
-
                 </button>
             </div>
 
             <ul className={ `${ isMenuOpen ? "block" : "hidden" } md:hidden flex flex-col items-center space-y-1 w-auto text-primary bg-light rounded-lg m-1 p-2` }>
-                <li className="">Discover</li>
-                <li className="">Get Involve </li>
-                <li className="">About Us</li>
+                { s }
                 <li className="p-2">
                     <Link className="  my-2 p-3 px-6 pt-2 text-light rounded-lg baseline w-full bg-primary hover:bg-light hover:text-primary text-center" href="/join">Join!</Link>
                 </li>
