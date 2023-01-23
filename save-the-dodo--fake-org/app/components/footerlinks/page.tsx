@@ -1,15 +1,18 @@
 import Link from "next/link";
-import { links } from "../../../typings";
+import { Footerlinksbundle } from "../../data";
 
 
 
 
 
-type footerlinks = links[]
+//type footerlinks = links[]
 
-export default function FooterLinks ()
+export default function FooterLinks (props: any)
 {
+    const footerlinksbundle = Footerlinksbundle;
 
+
+     /*
     const footerlinksbundle: footerlinks = [
         {
             title: "left",
@@ -30,7 +33,7 @@ export default function FooterLinks ()
 
     ];
 
-
+*/
 
     const s = footerlinksbundle.map( ( e ) =>
     {

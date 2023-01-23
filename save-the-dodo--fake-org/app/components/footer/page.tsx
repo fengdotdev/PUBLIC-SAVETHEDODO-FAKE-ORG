@@ -2,6 +2,8 @@ import FooterLinks from "../footerlinks/page";
 
 export default function Footer ()
 {
+
+  
     return (
         <footer className="mb-auto bg-primary py-10 text-center">
             <FooterLinks/>

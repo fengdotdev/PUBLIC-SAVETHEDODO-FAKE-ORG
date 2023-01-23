@@ -10,3 +10,7 @@ export type link ={
     title: string,
     url: string;
 }
+
+
+
+export type arrlinks = links[]

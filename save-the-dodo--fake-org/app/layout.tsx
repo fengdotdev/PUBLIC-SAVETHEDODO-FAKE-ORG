@@ -4,6 +4,12 @@ import Navbar from './components/navbar/page';
 import './globals.css';
 
 
+
+
+
+
+
+
 export default function RootLayout ( { children }: {
     children: React.ReactNode;
 } )

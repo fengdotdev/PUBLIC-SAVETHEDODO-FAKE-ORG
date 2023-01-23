@@ -1,31 +1,13 @@
 import Link from "next/link";
 import { links } from "../../../typings";
+import { Buttomlinksbundle } from "../../data";
 
-type footerlinks = links[]
 
 export default function ButtomLinks ()
 {
 
 
-    const buttomlinksbundle: footerlinks = [
-        {
-            title: "left",
-            content: [ { title: "some", url: "/some" } ]
-        },
-        {
-            title: "center",
-            content: [
-                { title: "some", url: "/some" },
-                { title: "some", url: "/some" },
-                { title: "some", url: "/some" }
-            ]
-        },
-        {
-            title: "right",
-            content: [ { title: "some", url: "/some" } ]
-        },
-
-    ];
+    const buttomlinksbundle = Buttomlinksbundle
 
 
     const s = buttomlinksbundle.map( ( e ) =>
