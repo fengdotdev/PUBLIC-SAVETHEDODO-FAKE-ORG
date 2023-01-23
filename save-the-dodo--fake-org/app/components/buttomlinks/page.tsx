@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { links } from "../../../typings";
 import { Buttomlinksbundle } from "../../data";
 
 
@@ -13,7 +12,7 @@ export default function ButtomLinks ()
     const s = buttomlinksbundle.map( ( e ) =>
     {
         return (
-            <>
+            <div className="flex flex-col px-3 ">
                 <p className="font-bold">{ e.title }</p>
                 <ul>
                     { e.content.map( ( e ) =>
@@ -24,14 +23,14 @@ export default function ButtomLinks ()
                         );
                     } ) }
                 </ul>
-            </>
+            </div>
         );
     } );
 
 
 
     return (
-        <div className="flex flex-row">
+        <div className="py-4 flex  flex-row  justify-around  space-x-5">
 
             { s }
         </div>

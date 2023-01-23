@@ -3,16 +3,12 @@
 import { useState } from "react";
 import Logo from "../logo/page";
 import Link from "next/link";
-import { link } from "../../../typings";
+import { Navlinks } from "../../data";
 
 
-export default function Navbar ( props: {} )
+export default function Navbar ()
 {
-    const navlinks: link[] = [
-        { title: "Discover", url: "/some" },
-        { title: "Get Involve", url: "/some" },
-        { title: "About Us", url: "/some" },
-    ]
+    const navlinks = Navlinks
 
     const [ isMenuOpen, setMenuOpen ] = useState( false );
 

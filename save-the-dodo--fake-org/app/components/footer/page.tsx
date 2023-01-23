@@ -1,13 +1,17 @@
+import { FooterText } from "../../data";
 import FooterLinks from "../footerlinks/page";
 
 export default function Footer ()
 {
 
-  
+
+    const footertext = FooterText ? FooterText : "";
+
     return (
-        <footer className="mb-auto bg-primary py-10 text-center">
+        <footer className="mb-auto bg-primary py-6 text-center">
             <FooterLinks/>
-            <h1 className="text-light ">SAVE THE DODO IS A FAKE ORG ONLY FOR WEBDEV PORTAFOLIO SHOWCASE</h1>
+            <hr className=" h-1 mx-auto mb-2 w-1/3 border-light " />
+            <h1 className="text-light ">{ footertext }</h1>
         </footer>
     );
 }

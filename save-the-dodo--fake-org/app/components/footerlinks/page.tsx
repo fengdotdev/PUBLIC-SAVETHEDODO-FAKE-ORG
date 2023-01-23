@@ -5,42 +5,19 @@ import { Footerlinksbundle } from "../../data";
 
 
 
-//type footerlinks = links[]
 
-export default function FooterLinks (props: any)
+export default function FooterLinks ()
 {
     const footerlinksbundle = Footerlinksbundle;
 
 
-     /*
-    const footerlinksbundle: footerlinks = [
-        {
-            title: "left",
-            content: [ { title: "some", url: "/some" } ]
-        },
-        {
-            title: "center",
-            content: [
-                { title: "some", url: "/some" },
-                { title: "some", url: "/some" },
-                { title: "some", url: "/some" }
-            ]
-        },
-        {
-            title: "right",
-            content: [ { title: "some", url: "/some" } ]
-        },
-
-    ];
-
-*/
 
     const s = footerlinksbundle.map( ( e ) =>
     {
         return (
             <>
-                <p className="font-bold">{ e.title }</p>
-                <ul>
+
+                <ul className="mx-2 flex flex-row  flex-wrap justify-center space-x-6">
                     { e.content.map( ( e ) =>
                     {
                         return (
@@ -55,8 +32,9 @@ export default function FooterLinks (props: any)
     } );
 
     return (
-        <div className="flex flex-row justify-center space-x-8 pb-5 text-light text-bold">
+        <div className="flex flex-col justify-center space-x-8 pb-5 text-light text-bold">
             { s }
+
         </div>
     );
 
