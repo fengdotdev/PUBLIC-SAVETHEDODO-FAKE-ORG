@@ -7,7 +7,7 @@ export default function Hero ()
     return (
         <div className="grid-element">
             <Image className="w-screen h-[32rem]"
-                src="/img/hero.jpg"
+                src="./img/hero.jpg"
                 width="0"
                 height="0"
                 sizes="100vw"

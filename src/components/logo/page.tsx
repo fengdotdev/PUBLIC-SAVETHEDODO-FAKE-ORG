@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Logo ()
 {
     return (
-        <Link href="/"> <div className="flex flex-row items-center">
+        <Link href="./"> <div className="flex flex-row items-center">
             <Image className="pt-0"
                 src="./img/Dossier_Dodo_Character.png"
                 width="40"
