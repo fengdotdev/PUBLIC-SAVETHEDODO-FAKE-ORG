@@ -6,7 +6,7 @@ export default function Logo ()
     return (
         <Link href="/"> <div className="flex flex-row items-center">
             <Image className="pt-0"
-                src="/img/Dossier_Dodo_Character.png"
+                src="./img/Dossier_Dodo_Character.png"
                 width="40"
                 height="40"
                 alt="Picture of the author"
