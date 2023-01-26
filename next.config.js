@@ -9,8 +9,8 @@ const nextConfig = {
     unoptimized: true
     
   },
-  basePath: "/PUBLIC-SAVETHEDODO-FAKE-ORG",
-  assetPrefix: isProd ? '.' : undefined,
+  basePath: "/savethedodo",
+  //assetPrefix: isProd ? '.' : undefined,
 };
 
 module.exports = nextConfig;
