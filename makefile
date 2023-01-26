@@ -26,3 +26,8 @@ html:
 	yarn html
 
 
+pub:
+	make html
+	make git
+
+
