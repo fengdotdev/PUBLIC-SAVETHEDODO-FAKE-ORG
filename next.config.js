@@ -6,11 +6,13 @@ const nextConfig = {
 
   reactStrictMode: true,
   images: {
-    unoptimized: true
+
+    unoptimized: true,
+
     
   },
   basePath: "/savethedodo",
-  //assetPrefix: isProd ? '.' : undefined,
+  assetPrefix: isProd ? "/savethedodo" : undefined,
 };
 
 module.exports = nextConfig;
