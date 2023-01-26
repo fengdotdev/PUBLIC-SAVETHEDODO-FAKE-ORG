@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Hero from '@/components/hero/page';
+import Card from '@/components/card/page';
 
 
 export default function Home ()
@@ -9,6 +10,19 @@ export default function Home ()
           <section>
             <Hero />
           </section>
+
+      <section className=''>
+        <h1 className='text-4xl font-bold text-center text-primary my-4'>News</h1>
+        <hr className='h-2 w-64  border-1 rounded bg-primary mx-auto text-5xl' />
+        <div className='flex flex-col sm:flex-row sm:justify-center sm:space-x-10'>
+          <Card />
+          <Card />
+
+          <Card />
+        </div>
+
+
+      </section>
           <article className="p-1 m-4">
             <h1 className="text-3xl text-primary">
               Suspendisse ut lacinia massa, ac porta diam.

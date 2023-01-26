@@ -30,7 +30,7 @@ export const Buttomlinksbundle: arrlinks = [
         title: "Latest",
         content: [
             { title: "Latest Updates", url: "/latest/latest_updates" },
-            { title: "Press Centre", url: "//latest/press_centre" },
+            { title: "Press Centre", url: "/latest/press_centre" },
             { title: "Success Stories", url: "/latest/success_stories" } ]
     },
 

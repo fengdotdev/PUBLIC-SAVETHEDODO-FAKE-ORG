@@ -15,8 +15,7 @@ export default function FooterLinks ()
     const s = footerlinksbundle.map( ( e ) =>
     {
         return (
-            <>
-
+            <div key={ e.title }>
                 <ul className="mx-2 flex flex-row  flex-wrap justify-center space-x-6">
                     { e.content.map( ( e ) =>
                     {
@@ -26,7 +25,7 @@ export default function FooterLinks ()
                         );
                     } ) }
                 </ul>
-            </>
+            </div>
 
         );
     } );
