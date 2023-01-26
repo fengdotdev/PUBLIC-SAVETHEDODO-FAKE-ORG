@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true
   },
   basePath: "",
-  assetPrefix: isProd ? 'https://fengdotdev.github.io/PUBLIC-SAVETHEDODO-FAKE-ORG/' : undefined,
+  assetPrefix: isProd ? '.' : undefined,
 };
 
 module.exports = nextConfig;
