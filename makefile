@@ -26,7 +26,7 @@ html:
 	yarn html
 
 fix:
-	touch public/.nojekyll
+	touch docs/.nojekyll
 
 pub:
 	make html
