@@ -12,7 +12,7 @@ const nextConfig = {
     
   },
   basePath: "/savethedodo",
-  assetPrefix: isProd ? "/savethedodo" : undefined,
+  assetPrefix: "/savethedodo" 
 };
 
 module.exports = nextConfig;
