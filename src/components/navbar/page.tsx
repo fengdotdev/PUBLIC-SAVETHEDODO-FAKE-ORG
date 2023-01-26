@@ -15,7 +15,7 @@ export default function Navbar ()
     const s = navlinks.map( ( e ) =>
     {
         return (
-            <li key={e.title+e.url} className="text-light" ><Link href={"."+ e.url }>{ e.title }
+            <li key={e.title+e.url} className="text-light" ><Link href={e.url }>{ e.title }
             </Link></li>
         );
     } )
