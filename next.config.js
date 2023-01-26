@@ -9,7 +9,7 @@ const nextConfig = {
     unoptimized: true
     
   },
-  //basePath: "https://fengdotdev.github.io/PUBLIC-SAVETHEDODO-FAKE-ORG",
+  basePath: "/PUBLIC-SAVETHEDODO-FAKE-ORG",
   assetPrefix: isProd ? '.' : undefined,
 };
 
