@@ -42,11 +42,11 @@ export const Footerlinksbundle: arrlinks = [
     {
         title: "about the fundation",
         content: [
-            { title: "FAQ", url: "/contact" },
+            { title: "FAQ", url: "/fundation/contact" },
             { title: "Jobs", url: "/jobs" },
-            { title: "Save The Dodo Consultant", url: "/consultant" },
-            { title: "Contact On The Island", url: "/contact_ragnarok" },
-            { title: "Contact On Ragnarok", url: "/contact_island" },
+            { title: "Save The Dodo Consultant", url: "/fundation/consultant" },
+            { title: "Contact On The Island", url: "/fundation/contact_ragnarok" },
+            { title: "Contact On Ragnarok", url: "/fundation/contact_island" },
 
         ]
     },
