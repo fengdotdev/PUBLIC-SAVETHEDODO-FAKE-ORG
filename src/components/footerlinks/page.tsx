@@ -21,7 +21,7 @@ export default function FooterLinks ()
                     { e.content.map( ( e ) =>
                     {
                         return (
-                            <li id={ e.title + e.url } ><Link href={ e.url }>{ e.title }
+                            <li key={ e.title + e.url } ><Link href={ e.url }>{ e.title }
                             </Link></li>
                         );
                     } ) }
