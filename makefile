@@ -18,7 +18,7 @@ restore:
 	yarn install
 
 git:
-	git add .
+	git add -A
 	git commit -m "ok"
 	git push -u origin main 
 
