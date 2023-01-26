@@ -12,8 +12,8 @@ export const Buttomlinksbundle: arrlinks = [
     {
         title: "Discover",
         content: [
-            { title: "The Island", url: "/the_island" },
-            { title: "Ragnarok", url: "/ragnarok" },
+            { title: "The Island", url: "/discover/the_island" },
+            { title: "Ragnarok", url: "/discover/ragnarok" },
             { title: "More On Our Work", url: "/our_work" },
             { title: "About Save The Dodo", url: "/about" },
         ]
