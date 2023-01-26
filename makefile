@@ -25,6 +25,8 @@ git:
 html:
 	yarn html
 
+fix:
+	touch public/.nojekyll
 
 pub:
 	make html
