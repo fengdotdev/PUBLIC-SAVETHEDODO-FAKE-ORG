@@ -9,9 +9,9 @@ export default function Layout ( { children }:any )
         <body className="bg-dark">
             <CustomHead />
             <Navbar />
-            <main className="h-5/6">{ children }</main>
+            <main className="h-screen bg-light">{ children }</main>
             <ButtomLinks/>
-            <Footer/>
+            <Footer />
             </body>
     );
 }
