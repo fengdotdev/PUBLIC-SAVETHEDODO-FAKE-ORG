@@ -9,7 +9,7 @@ export default function Layout ( { children }:any )
         <>
             <CustomHead />
             <Navbar />
-            <main className="h-5/6	">{ children }</main>
+            <main className="h-5/6">{ children }</main>
             <ButtomLinks/>
             <Footer/>
             </>
