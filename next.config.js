@@ -11,8 +11,8 @@ const nextConfig = {
 
     
   },
-  basePath: isProd ? "/savethedodo" : undefined,
-  assetPrefix: isProd ? "/savethedodo" : undefined,
+  //basePath: isProd ? "" : undefined,
+ // assetPrefix: isProd ? "/savethedodo" : undefined,
 };
 
 module.exports = nextConfig;
