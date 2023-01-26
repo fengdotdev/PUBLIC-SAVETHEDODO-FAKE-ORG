@@ -60,7 +60,7 @@ export const Footerlinksbundle: arrlinks = [
     },
     {
         title: "site",
-        content: [ { title: "Site Map", url: "/site_map" } ]
+        content: [ { title: "Site Map", url: "/site/site_map" } ]
     },
 
 ];

@@ -30,7 +30,7 @@ export default function ButtomLinks ()
 
 
     return (
-        <div className="py-4 flex  flex-row  justify-around  space-x-5">
+        <div className="bg-light py-4 flex  flex-row  justify-around  space-x-5">
 
             { s }
         </div>
