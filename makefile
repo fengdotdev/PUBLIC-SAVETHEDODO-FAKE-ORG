@@ -17,6 +17,12 @@ lint:
 restore:
 	yarn install
 
+git:
+	git add .
+	git commit -m "ok"
+	git push -u origin master 
 
 html:
 	yarn html
+
+
