@@ -20,7 +20,7 @@ export default function Navbar ()
         );
     } )
     return (
-        <nav className="p-3 bg-dark justify-between	items-center ">
+        <nav className="p-3 bg-dark justify-between	items-center shadow-2xl">
             <div className="flex flex-row justify-between	items-center ">
                 <div className="">
                     <Logo />

@@ -14,3 +14,20 @@ export type link ={
 
 
 export type arrlinks = links[]
+
+
+
+
+export type CustomCard1 = {
+    posted: string;
+    title: string;
+    content: string;
+    image: string;
+    buttonText: string;
+    url: string;
+};
+
+
+
+
+

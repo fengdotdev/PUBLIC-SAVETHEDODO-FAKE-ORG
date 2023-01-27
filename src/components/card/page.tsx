@@ -5,6 +5,7 @@ export default function Card ()
 {
 
 
+    
 
 
     return (
@@ -23,7 +24,7 @@ export default function Card ()
                     <p className="text-sm  text-light">posted on 24 jan 2023</p>
                     <h1 className="text-2xl text-light font-bold">Title</h1>
                     <p className="text-xl italic  text-light
-">Lorem ipsum dolor sit amet consectetur addipisicing elit.</p>
+">Lorem ipsum dolor sit amet consectetur addipidsicing elit.</p>
                 </div>
 
 

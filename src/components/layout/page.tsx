@@ -9,9 +9,10 @@ export default function Layout ( { children }:any )
         <body className="bg-dark flex flex-col">
             <CustomHead />
             <Navbar />
-            <main className="min-h-screen bg-light">{ children }</main>
+            <main className="min-h-screen bg-light shadow-inner	">{ children }</main>
             <ButtomLinks/>
             <Footer />
+            
             </body>
     );
 }
