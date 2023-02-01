@@ -3,7 +3,7 @@ run:
 
 
 ip:
-	ipconfig
+	ipconfig getifaddr
 	
 build:
 	yarn run build

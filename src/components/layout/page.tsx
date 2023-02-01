@@ -7,12 +7,17 @@ export default function Layout ( { children }:any )
 {
     return (
         <body className="bg-dark flex flex-col">
-            <CustomHead />
-            <Navbar />
-            <main className="min-h-screen bg-light shadow-inner	">{ children }</main>
-            <ButtomLinks/>
-            <Footer />
-            
+            <div className="bg-light  max-lg:max-w-screen-lg">
+                <CustomHead />
+                <Navbar />
+                <main className="pt-8 min-h-screen bg-light shadow-inner	">{ children }</main>
+                <div className="mt-6">
+                    <ButtomLinks />
+                    <Footer />
+                </div>
+
+            </div>
+
             </body>
     );
 }

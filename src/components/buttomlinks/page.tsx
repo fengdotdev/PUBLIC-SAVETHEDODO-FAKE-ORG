@@ -12,7 +12,7 @@ export default function ButtomLinks ()
     const s = buttomlinksbundle.map( ( e ) =>
     {
         return (
-            <div key={ e.title } className="flex flex-col px-3 ">
+            <div key={ e.title } className="bg-light border-1 rounded shadow-2xl shadow-dark m-3 p-5 flex flex-col sm:w-3/12">
                 <p className="font-bold">{ e.title }</p>
                 <ul>
                     { e.content.map( ( e ) =>
@@ -30,7 +30,7 @@ export default function ButtomLinks ()
 
 
     return (
-        <div className="bg-light pt-4 pb-20 flex  flex-row  justify-around  space-x-5">
+        <div className=" pt-4  pb-20 flex flex-col  sm:flex-row  justify-around  ">
 
             { s }
         </div>
